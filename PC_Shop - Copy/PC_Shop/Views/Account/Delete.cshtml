@@ -1,0 +1,22 @@
+﻿
+@using PC_Shop.Models
+@model User
+@{
+	ViewBag.Title = "Delete";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+@using (Html.BeginForm("Delete", "Account", FormMethod.Post))
+{
+	<div class=" form-horizontal">
+		@Html.LabelFor(model => Model.Username)
+	</div>
+	<div class=" form-group">
+		@Html.TextBoxFor(model => Model.Username, new { @class = "form-control" })
+		@Html.ValidationMessageFor(model => Model.Username, "", new { @class = "text-danger" })
+	</div>
+	<div class="form-group">
+		<input class=" btn btn-danger" type="submit" value="Delete" />
+	</div>
+}

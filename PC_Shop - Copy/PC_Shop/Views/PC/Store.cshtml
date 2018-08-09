@@ -1,0 +1,44 @@
+﻿
+@using PC_Shop.Models
+@model List<PC>
+@{
+	ViewBag.Title = "Store";
+	Layout = "~/Views/shared/_Layout.cshtml";
+}
+<h2 align="center">Welcome to the Store</h2>
+<table class="table, table-bordered" width="1200" height="100" align="left">
+	<thead>
+		<tr>
+			<th style="padding-left:2em">PcName</th>
+			<th style="padding-left:2em"> Price</th>
+			<th style="padding-left:2em">UserName</th>
+		</tr>
+	</thead>
+	<tbody style=" resize:both; text-size-adjust:auto">
+		@foreach (PC displayObject in Model)
+		{
+			<tr>
+				
+				<td style="padding-left: 2em">
+					@displayObject.PcName
+				</td>
+
+
+				<td style=" padding-left:2em">
+					@displayObject.Price
+				</td>
+
+				<td>
+					@displayObject.UserName
+				</td>
+
+				<td style="padding-left: 2em">
+					@Html.ActionLink("Pc Details", "PCDetails", "PC", new { pcID = displayObject.PcID }, null)
+				</td>
+			</tr>
+
+
+		}
+	</tbody>
+</table>
+

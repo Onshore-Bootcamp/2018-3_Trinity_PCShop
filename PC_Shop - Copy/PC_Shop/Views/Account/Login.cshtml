@@ -1,0 +1,40 @@
+﻿@using PC_Shop.Models
+@model Login
+@{
+	ViewBag.Title = "Login";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Login</h2>
+@using (Html.BeginForm("Login", "Account", FormMethod.Post))
+{
+	<div class=" form-horizontal">
+
+
+		<div class="form-group">
+			@Html.LabelFor(model => Model.UserName)
+			@Html.TextBoxFor(model => Model.UserName, new { @class = "form-control" })
+			@Html.ValidationMessageFor(model => Model.UserName, "", new { @class = "text-danger" })
+		</div>
+
+		<div class="form-group">
+			@Html.LabelFor(model => Model.Password)
+			@Html.PasswordFor(model => Model.Password, new { @class = "form-control" })
+			@Html.ValidationMessageFor(model => Model.Password, "", new { @class = "text-danger" })
+		</div>
+
+		<div class="form-group">
+			@Html.LabelFor(model => Model.Email)
+			@Html.TextBoxFor(model => Model.Email, new { @class = "form-control" })
+			@Html.ValidationMessageFor(model => Model.Email, "", new { @class = "text-danger" })
+			
+		</div>
+
+		<div class=" form-group">
+			<input class="btn btn-success" type="submit" value=" Login" />
+		</div>
+
+
+
+	</div>
+}

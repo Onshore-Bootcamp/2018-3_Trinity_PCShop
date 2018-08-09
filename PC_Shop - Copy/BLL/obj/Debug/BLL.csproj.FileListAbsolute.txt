@@ -1,0 +1,18 @@
+C:\Users\Trinity\source\repos\PC_Shop\BLL\bin\Debug\BLL.dll
+C:\Users\Trinity\source\repos\PC_Shop\BLL\bin\Debug\BLL.pdb
+C:\Users\Trinity\source\repos\PC_Shop\BLL\bin\Debug\PC_Shop_DAL.dll
+C:\Users\Trinity\source\repos\PC_Shop\BLL\bin\Debug\PC_Shop_DAL.pdb
+C:\Users\Trinity\source\repos\PC_Shop\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\Trinity\source\repos\PC_Shop\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Trinity\source\repos\PC_Shop\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Trinity\source\repos\PC_Shop\BLL\obj\Debug\BLL.dll
+C:\Users\Trinity\source\repos\PC_Shop\BLL\obj\Debug\BLL.pdb
+C:\Users\Trinity\source\repos\PC_Shop - Copy\BLL\bin\Debug\BLL.dll
+C:\Users\Trinity\source\repos\PC_Shop - Copy\BLL\bin\Debug\BLL.pdb
+C:\Users\Trinity\source\repos\PC_Shop - Copy\BLL\bin\Debug\PC_Shop_DAL.dll
+C:\Users\Trinity\source\repos\PC_Shop - Copy\BLL\bin\Debug\PC_Shop_DAL.pdb
+C:\Users\Trinity\source\repos\PC_Shop - Copy\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\Trinity\source\repos\PC_Shop - Copy\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Trinity\source\repos\PC_Shop - Copy\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Trinity\source\repos\PC_Shop - Copy\BLL\obj\Debug\BLL.dll
+C:\Users\Trinity\source\repos\PC_Shop - Copy\BLL\obj\Debug\BLL.pdb

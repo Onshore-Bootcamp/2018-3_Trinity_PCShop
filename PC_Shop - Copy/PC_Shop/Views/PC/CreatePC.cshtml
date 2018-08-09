@@ -1,0 +1,56 @@
+﻿
+@using PC_Shop.Models
+@model PC
+@{
+	ViewBag.Title = "CreatePC";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create Your PC</h2>
+@using (Html.BeginForm("CreatePC", "PC", FormMethod.Post))
+{
+	<div class=" form-horizontal">
+		<div class="form-group">
+			@Html.HiddenFor(model => Session["UserID"])
+			@Html.HiddenFor(model => Session["UserName"])
+			@Html.LabelFor(model => Model.PcName)
+			@Html.TextBoxFor(model => Model.PcName, new { @class = "form-control" })
+			@Html.ValidationMessageFor(model => Model.PcName, "", new { @class = "text-danger" })
+		</div>
+		<div class="form-group">
+			@Html.LabelFor(model => Model.Cpu)
+			@Html.TextBoxFor(model => Model.Cpu, new { @class = "form-control" })
+			@Html.ValidationMessageFor(model => Model.Cpu, "", new { @class = "text-danger" })
+		</div>
+		<div class="form-group">
+			@Html.LabelFor(model => Model.Gpu)
+			@Html.TextBoxFor(model => Model.Gpu, new { @class = "form-control" })
+			@Html.ValidationMessageFor(model => Model.Gpu, "", new { @class = "text-danger" })
+		</div>
+		<div class="form-group">
+			@Html.LabelFor(model => Model.Motherboard)
+			@Html.TextBoxFor(model => Model.Motherboard, new { @class = "form-control" })
+			@Html.ValidationMessageFor(model => Model.Motherboard, "", new { @class = "text-danger" })
+		</div>
+		<div class="form-group">
+			@Html.LabelFor(model => Model.Ram)
+			@Html.TextBoxFor(model => Model.Ram, new { @class = "form-control" })
+			@Html.ValidationMessageFor(model => Model.Ram, "", new { @class = "text-danger" })
+		</div>
+		<div class="form-group">
+			@Html.LabelFor(model => Model.Powersupply)
+			@Html.TextBoxFor(model => Model.Powersupply, new { @class = "form-control" })
+			@Html.ValidationMessageFor(model => Model.Powersupply, "", new { @class = "text-danger" })
+		</div>
+		<div class="form-group">
+			@Html.LabelFor(model => Model.Price)
+			@Html.TextBoxFor(model => Model.Price, new { @class = "form-control" })
+			@Html.ValidationMessageFor(model => Model.Price, "", new { @class = "text-danger" })
+		</div>
+		<div class=" form-group">
+			<input class=" btn btn-success" type="submit" value="Create" />
+		</div>
+	</div>
+}
+
+

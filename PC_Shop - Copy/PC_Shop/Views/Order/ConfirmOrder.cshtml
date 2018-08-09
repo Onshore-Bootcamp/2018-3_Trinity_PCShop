@@ -1,0 +1,60 @@
+﻿@using PC_Shop.Models;
+@model Order
+@{
+	ViewBag.Title = "ConfirmOrder";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>View Your Details To Confirm</h2>
+@using (Html.BeginForm("ConfirmOrder", "Order", FormMethod.Post))
+{ 
+<div class="container">
+	<div class=" row">
+		<div class=" col-lg-6">
+			@Html.HiddenFor(model => Model.PcID)
+		</div>
+	</div>
+	<div class=" row">
+		<div class=" col-lg-6">
+			@Html.HiddenFor(model => Model.OrderID)
+		</div>
+	</div>
+	<div class=" row">
+		<div class=" col-lg-6">
+			@Html.HiddenFor(model => Model.UserID)
+		</div>
+	</div>
+	<div class="= form-group">
+		@Html.LabelFor(model => Model.Address)
+		@Html.TextBoxFor(model => Model.Address, new { @class = "form-control" })
+		@Html.ValidationMessageFor(model => Model.Address, "", new { @class = "text-danger" })
+	</div>
+
+	<div class="= form-group">
+		@Html.LabelFor(model => Model.Country)
+		@Html.TextBoxFor(model => Model.Country, new { @class = "form-control" })
+		@Html.ValidationMessageFor(model => Model.Country, "", new { @class = "text-danger" })
+	</div>
+	<div class=" row">
+		<h3>Price</h3>
+		<div class=" col-lg-6">
+			<p> @Model.price</p>
+		</div>
+	</div>
+	<div class=" row">
+		<h3>PC Name</h3>
+		<div class=" col-lg-6">
+			<p> @Model.PCName</p>
+		</div>
+	</div>
+	<div class=" row">
+		<h3>Seller</h3>
+		<div class=" col-lg-6">
+			<p> @Model.Username</p>
+		</div>
+	</div>
+	<div class="form-group">
+		<input class="btn btn-success" type="submit" value="ConfirmOrder" />
+	</div>
+</div>
+}

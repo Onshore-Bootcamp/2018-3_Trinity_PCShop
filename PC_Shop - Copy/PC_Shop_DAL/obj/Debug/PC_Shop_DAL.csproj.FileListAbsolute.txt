@@ -1,0 +1,12 @@
+C:\Users\Trinity\source\repos\PC_Shop\PC_Shop_DAL\bin\Debug\PC_Shop_DAL.dll
+C:\Users\Trinity\source\repos\PC_Shop\PC_Shop_DAL\bin\Debug\PC_Shop_DAL.pdb
+C:\Users\Trinity\source\repos\PC_Shop\PC_Shop_DAL\obj\Debug\PC_Shop_DAL.csproj.CoreCompileInputs.cache
+C:\Users\Trinity\source\repos\PC_Shop\PC_Shop_DAL\obj\Debug\PC_Shop_DAL.dll
+C:\Users\Trinity\source\repos\PC_Shop\PC_Shop_DAL\obj\Debug\PC_Shop_DAL.pdb
+C:\Users\Trinity\source\repos\PC_Shop\PC_Shop_DAL\obj\Debug\PC_Shop_DAL.csprojAssemblyReference.cache
+C:\Users\Trinity\source\repos\PC_Shop - Copy\PC_Shop_DAL\bin\Debug\PC_Shop_DAL.dll
+C:\Users\Trinity\source\repos\PC_Shop - Copy\PC_Shop_DAL\bin\Debug\PC_Shop_DAL.pdb
+C:\Users\Trinity\source\repos\PC_Shop - Copy\PC_Shop_DAL\obj\Debug\PC_Shop_DAL.csprojAssemblyReference.cache
+C:\Users\Trinity\source\repos\PC_Shop - Copy\PC_Shop_DAL\obj\Debug\PC_Shop_DAL.csproj.CoreCompileInputs.cache
+C:\Users\Trinity\source\repos\PC_Shop - Copy\PC_Shop_DAL\obj\Debug\PC_Shop_DAL.dll
+C:\Users\Trinity\source\repos\PC_Shop - Copy\PC_Shop_DAL\obj\Debug\PC_Shop_DAL.pdb

@@ -1,0 +1,35 @@
+﻿@using PC_Shop.Models
+@model UsersViewModel
+@{
+	ViewBag.Title = "Update";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Update</h2>
+
+
+@using (Html.BeginForm("Update", "Account", FormMethod.Post))
+{
+<div class="form-horizontal">
+	 @Html.HiddenFor(model => Model.Update.UserID)
+	 @Html.LabelFor(model=> Model.Update.RoleDescription)
+	 @Html.LabelFor(model => Model.Update.RoleName)
+
+	@Html.LabelFor(model => Model.Update.UserName)
+	<div class="form-group">
+		@Html.TextBoxFor(model => Model.Update.UserName, new { @class = "form-control" })
+		@Html.ValidationMessageFor(model => Model.Update.UserName, "", new { @class = "text-danger" })
+	</div>
+	@Html.LabelFor(model => Model.Update.Email)
+	<div class="form-group">
+		@Html.TextBoxFor(model => Model.Update.Email, new { @class = "form-control" })
+		@Html.ValidationMessageFor(model => Model.Update.Email, "", new { @class = "text-danger" })
+	</div>
+	<div>
+	@Html.DropDownListFor(m =>Model.Update.RoleID, Model.Select, new { @class = "form-control" })
+	</div>
+	<div class="form-group">
+		<input type="submit" value="Update" class="btn btn-warning"/>
+	</div>
+</div>
+}

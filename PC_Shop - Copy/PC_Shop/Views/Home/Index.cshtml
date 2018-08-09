@@ -1,0 +1,31 @@
+﻿@using  PC_Shop.Models
+@model Order
+@{
+	ViewBag.Title = "Home Page";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="jumbotron">
+	<h1>
+		Our top seller is
+	</h1>
+	<h1>
+		@Model.Username
+	</h1>
+	</div>
+
+<div class="row">
+	<div class="col-md-4">
+		<h2>Login</h2>
+		<p>
+			Already have an account login to see the list of computers we have available.
+		</p>
+		@Html.ActionLink("Login", "Login", "Account",null, new { @class ="btn btn-default" })
+	</div>
+    
+    <div class="col-md-4 pull-right">
+        <h2>Register</h2>
+        <p>Register Here to begin your search to find a better computer today.</p>
+        @Html.ActionLink("Register", "Register", "Account",null,  new {@class ="btn btn-default" })
+    </div>
+</div>

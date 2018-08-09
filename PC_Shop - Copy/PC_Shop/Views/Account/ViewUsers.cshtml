@@ -1,0 +1,44 @@
+﻿@using PC_Shop.Models
+@model List<User>
+@{
+	ViewBag.Title = "ViewUsers";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2 align="center">View All Users</h2>
+<table class="table table-bordered ">
+	<thead>
+		<tr>
+			<th>
+				UserName
+			</th>
+			<th>
+				Email
+			</th>
+			<th>
+				View Details
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (User displayObject in Model)
+		{
+			<tr>
+				<td>
+					@displayObject.Username
+				</td>
+
+				<td>
+					@displayObject.Email
+				</td>
+
+				<td>
+					@Html.ActionLink("User Details", "UserDetails", "Account", new { username = displayObject.Username }, null)
+				</td>
+			</tr>
+
+		}
+	</tbody>
+
+</table>

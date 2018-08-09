@@ -1,0 +1,59 @@
+﻿@using PC_Shop.Models
+@model User
+@{
+	ViewBag.Title = "UserDetails";
+}
+
+<h2> User Details</h2>
+<div>
+	<div class="container">
+		<div class=" row">
+			<h3>Address</h3>
+			<div class=" col-lg-6">
+				@Model.Address
+			</div>
+		</div>
+		<div class="row">
+			<h3>Country</h3>
+			<div class=" col-lg-6">
+				@Model.Country
+			</div>
+		</div>
+
+		<div class=" row">
+			<h3>User Name</h3>
+			<div class=" col-lg-6">
+				@Model.Username
+			</div>
+		</div>
+
+		<div class=" row">
+			<h3>RoleName</h3>
+			<div class=" col-lg-6">
+				@Model.RoleName
+			</div>
+		</div>
+
+		<div class=" row">
+			<h3>Email</h3>
+				<div class=" col-lg-6">
+					@Model.Email
+				</div>
+		</div>
+
+		<div class=" row">
+			<h3>Update</h3>
+			<div class=" col-lg-6">
+				@Html.ActionLink("Edit", "Update", "Account", new { username = Model.Username }, new { @class = "btn btn-warning" })
+			</div>
+		</div>
+		<div class=" row">
+			<h3>Delete</h3>
+			<div class=" col-lg-6">
+				
+				@Html.ActionLink("Delete", "Delete", "Account", new { username = Model.Username }, new { @onclick = "return confirm('Are you sure')", @class ="btn btn-danger" })
+			</div>
+		</div>
+		</div>
+	</div>
+	

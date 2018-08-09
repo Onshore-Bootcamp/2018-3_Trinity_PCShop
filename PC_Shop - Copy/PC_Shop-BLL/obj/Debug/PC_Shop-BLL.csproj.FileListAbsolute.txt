@@ -1,0 +1,9 @@
+C:\Users\Trinity\source\repos\PC_Shop\PC_Shop-BLL\bin\Debug\PC_Shop-BLL.dll
+C:\Users\Trinity\source\repos\PC_Shop\PC_Shop-BLL\bin\Debug\PC_Shop-BLL.pdb
+C:\Users\Trinity\source\repos\PC_Shop\PC_Shop-BLL\bin\Debug\PC_Shop_DAL.dll
+C:\Users\Trinity\source\repos\PC_Shop\PC_Shop-BLL\bin\Debug\PC_Shop_DAL.pdb
+C:\Users\Trinity\source\repos\PC_Shop\PC_Shop-BLL\obj\Debug\PC_Shop-BLL.csprojAssemblyReference.cache
+C:\Users\Trinity\source\repos\PC_Shop\PC_Shop-BLL\obj\Debug\PC_Shop-BLL.csproj.CoreCompileInputs.cache
+C:\Users\Trinity\source\repos\PC_Shop\PC_Shop-BLL\obj\Debug\PC_Shop-BLL.csproj.CopyComplete
+C:\Users\Trinity\source\repos\PC_Shop\PC_Shop-BLL\obj\Debug\PC_Shop-BLL.dll
+C:\Users\Trinity\source\repos\PC_Shop\PC_Shop-BLL\obj\Debug\PC_Shop-BLL.pdb

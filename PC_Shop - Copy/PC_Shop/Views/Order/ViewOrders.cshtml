@@ -1,0 +1,54 @@
+﻿@using PC_Shop.Models
+@model  List<Order>
+@{
+	ViewBag.Title = "ViewOrders";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>View Orders</h2>
+<h2 align="center">Purchased Items</h2>
+<table class="table table-bordered" width="1200" height="100" align="left">
+	<thead>
+		<tr>
+			<th style="padding-left:2em">Address</th>
+			<th style="padding-left:2em"> Country</th>
+			<th style="padding-left:2em">Pc Name</th>
+			<th style="padding-left:2em">Username</th>
+			<th style="padding-left:2em">Price</th>
+			
+		</tr>
+	</thead>
+	<tbody style=" resize:both; text-size-adjust:auto">
+		@foreach (Order displayObject in Model)
+		{
+		<tr>
+			<td style="padding-left: 2em">
+				@displayObject.Address
+			</td>
+
+
+			<td style=" padding-left:2em">
+				@displayObject.Country
+			</td>
+
+			<td>
+				@displayObject.PCName
+			</td>
+			<td>
+				@displayObject.Username
+			</td>
+			<td>
+				@displayObject.price
+			</td>
+
+			<td>
+				@Html.ActionLink("Update", "UpdateOrder", "Order", new { orderID = displayObject.OrderID }, new { @class = "btn btn-danger" })
+			</td>
+			<td>
+				@Html.ActionLink("Delete", "DeleteOrder", "Order", new { orderID = displayObject.OrderID }, new { @onclick = "return confirm('Are you sure')", @class = "btn btn-danger" })
+			</td>
+		</tr>
+
+
+		}
+		</tbody>
+	</table>
